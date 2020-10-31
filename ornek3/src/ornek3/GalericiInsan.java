@@ -25,7 +25,8 @@ public class GalericiInsan extends Insan {
 		for(int i=0;i<maxAraba;i++) {
 			if(arabalar[i]==araba)
 			{
-				System.out.print("Araba Mevcut!");
+				System.out.println("Araba Mevcut!");
+				break;
 			}
 			else {
 				arabalar[arabaSayisi]=araba;

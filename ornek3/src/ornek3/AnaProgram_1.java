@@ -9,7 +9,7 @@ public class AnaProgram_1 {
 		Araba araba1,araba2;
 		araba1=new Araba("06 TS 002");
 		araba2=new Araba("03 TS 002");
-		Araba yeni=new Araba("04 TT 006");
+		Araba yeni=new Araba("05 TS 602");
 		patron.setGaleriAdi("Ayyýldýz");
 
 		patron.arabaEkle(araba1);
@@ -21,7 +21,9 @@ public class AnaProgram_1 {
 		patron.arabaSat(araba2);
 		System.out.println(patron.toString());
 		
-		patron.arabaEkle(yeni);
+		patron.arabaEkle(araba2);
+		patron.arabaEkle(araba2);
+		patron.arabaEkle(araba2);
 		System.out.println(patron.toString());
 		
 		

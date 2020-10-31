@@ -1,15 +1,15 @@
 package ornek4;
 
 public class Child {
-	private final String name="";
-	private String childname;
-	private int age;
-	public Child(String childname,int age) {
-		this.childname=childname;
-		this.age=age;
+	private final String name;
+	public Child(String name) {
+		this.name=name;
+	}
+	public Child(){
+		this.name="";
 	}
 	public String getChildname() {
-		return childname;
+		return name;
 	}
 	private int ageInMonths;
 
@@ -19,8 +19,4 @@ public class Child {
 	public void setAgeInMonths(int ageInMonths) {
 		this.ageInMonths = ageInMonths;
 	}
-	public String getName() {
-		return name;
-	}
-
 }

@@ -1,26 +1,25 @@
 package ornek4;
 
 public class KinderGarten {
-	private Child[] childs;
-	private Child[] age;
-	private int childcount=0;
-	public boolean addChild(Child aChild) {
-		childs[childcount]=aChild;
-		childcount++;
+	private int max=100;
+	Child[] child=new Child[max];
+	private int count=0;
+	public boolean addChild(Child childs) {
+		this.child[count]=childs;
+		count++;
 		return true;
 	}
-	public KinderGarten(String childs) {
-		this.childs=new Child[100];
-	}
+
 	public Child findOldestChild() {
-		
-		return age[childcount];
-		
+		int sira=0;
+		for(int i=0;i<count-1;i++) {
+			if(this.child[sira].getAgeInMonths()>this.child[i].getAgeInMonths()) {
+				sira=i;
+			}
+			else {continue;}
+		}
+		return this.child[sira];
 	}
-	public int getChildCount() {
-		return this.childcount;
-	}
-	
 	
 
 }
