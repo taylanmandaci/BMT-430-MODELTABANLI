@@ -12,8 +12,8 @@ public class KinderGarten {
 
 	public Child findOldestChild() {
 		int sira=0;
-		for(int i=0;i<count-1;i++) {
-			if(this.child[sira].getAgeInMonths()>this.child[i].getAgeInMonths()) {
+		for(int i=0;i<=count-1;i++) {
+			if(this.child[i].getAgeInMonths()>this.child[sira].getAgeInMonths()) {
 				sira=i;
 			}
 			else {continue;}
